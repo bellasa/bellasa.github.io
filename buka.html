@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Assistant :D</title>
+  </head>
+  <style>
+    #btm{
+      -webkit-animation-name:'img';
+      -webkit-animation-duration:2s;
+    }
+
+
+
+
+    @-webkit-keyframes img{
+      from{opacity:0;}
+      to{opacity:1;}
+    }
+  </style>
+  <body style="background-color:#fbda9b;font-family: 'Dosis', sans-serif;">
+
+
+
+
+    <div class="container-fluid">
+
+      <div class="row mt-5 p-3" style="background-color:rgba(0,0,0,0.2)">
+      	<div class="mx-auto h3 text-center">
+          <p class="h5">Hitung mundur sebelum berbuka</p>
+       		<span	id="jam"></span> Jam : <span id="menit"></span> Menit : <span id="detik"></span> Detik
+      	<br><a href="index.html" class="btn btn-primary mt-5" style="background-color:#749cbc !important;border-color:#4b6b8d !important;">Kembali</a>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="row fixed-bottom" id="btm">
+          <div class="row mx-5 text-center">
+            <p>
+            "Rasulullah Muhammad SAW memberikan dua anjuran dalam menjalankan ibadah kepada umat Islam. Pertama yakni untuk mengakhirkan waktu sahur atau menjelang imsak. Kedua, yakni untuk menyegerakan waktu berbuka usai mendengar kumandang adzan Magrib."
+            </p>
+        	</div>
+				<img src="img/2.jpg" class="w-75 h-75 mx-auto">
+			</div>
+
+
+		</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+
+
+var deadline = new Date("dec 31, 2021 17:37:00").getTime();
+
+
+var x = setInterval(function() {
+
+
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("jam").innerHTML =hours;
+document.getElementById("menit").innerHTML = minutes;
+document.getElementById("detik").innerHTML =seconds;
+
+}, 1000);
+</script>
+  </body>
+</html>
