@@ -8,11 +8,12 @@
     <script src="https://kit.fontawesome.com/9b2df6e43b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
 </head>
-<body class="text-slate-700 bg-third">
+<body class="text-slate-700 bg-third font-main">
     <!-- nav start -->
-    <nav class="fixed bg-primary w-full px-8 md:px-auto font-mono text-third z-50">
+    <nav class="fixed bg-primary w-full px-8 md:px-auto text-third z-50">
         <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
             <div class=" md:order-1 mx-auto md:mx-0 ">
                 <a href="" class="flex"> 
@@ -25,7 +26,7 @@
                     <li class="nav-link"><a href="#Home">Home</a></li>
                     <li class="nav-link"><a href="#Stack">Tech Stack</a></li>
                     <li class="nav-link"><a href="#Work">Work</a></li>
-                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li class="nav-link"><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
             
@@ -38,7 +39,7 @@
     <section  id="Home" class="relative pt-12 scroll-m-custom">
         <div id="Home-particles" class="w-full h-full absolute bg-third -z-10"></div>
         <div class="container sm:mx-auto mx-2 grid grid-cols-1 sm:grid-cols-2">
-            <div class="font-mono pt-24">
+            <div class="pt-24">
                 <p class="text-2xl font">Halo saya,</p>
                 <p class="text-6xl tracking-widert mb-3 font-bold font-pixel">
                     <span class="px-2 bg-secondary text-primary">BELLA</span>
@@ -63,10 +64,13 @@
                 focus:translate-y-[5px]
                 focus:drop-shadow-none
                 group
+                ease-in-out
+                duration-500
+                hover:tracking-wider
                 " id="cv-btn">
                     <a class="">
                    
-                        My Resume <i class="fa-solid fa-file hidden group-hover:inline"></i>
+                        My Resume <i class="fa-solid fa-file"></i>
                     </a>
                 </button>
             </div>
@@ -78,9 +82,9 @@
     <!-- section Home end -->
 
     <!-- section stack start -->
-    <section id="Stack" class="bg-primary w-full py-5 font-mono scroll-m-custom">
-        <div class="container mx-auto px-5">
-            <h1 class="text-center text-6xl text-third font-pixel my-5">Tech Stack</h1>
+    <section id="Stack" class="bg-primary w-full py-5 scroll-m-custom ">
+        <div class="container mx-auto px-5 group/title">
+            <h1 class="text-center text-6xl text-third font-pixel py-5 group-hover/title:tracking-widest">Tech Stack</h1>
             <div class="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
                 <div class="card-stack">
                     <img src="asset/stack/bs.png" class="card-stack-img">
@@ -129,52 +133,119 @@
 
     <!-- section project start -->
     <section id="Work" class="scroll-m-custom">
-        <div class="container mx-auto pt-8">
-            <h1 class="text-center text-6xl text-primary font-pixel my=-5">Work</h1>
+        <div class="container mx-auto pt-8 group/title">
+            <h1 class="text-center text-6xl text-primary font-pixel my-5 group-hover/title:tracking-widest">Work</h1>
             <div class="m-5 grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div class="card-project">
+                    <img src="asset/project/e-perpus.png" >
                     <div class="card-project-cap">
-                        <div class="card-project-title">Project</div>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, .
+                        <div class="card-project-title">E-perpus</div>
+                        <p class="pb-3">Aplikasi peminjaman buku dengan fitur login dan absen, input menggunakan id penerbitan buku.
                         </p>
                         <span class="tag-web">web project</span>
-                        <span class="tag-custom">php</span>
+                        <span class="tag-custom">php native</span>
                         <span class="tag-custom">bootstrap</span>
+                        <div class="flex mt-2">
+                            <a href="" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
                     </div>
-                    <img src="asset/project/dummy.png">
+
                 </div>
                 <div class="card-project">
+                    <img src="asset/project/igm.png">
                     <div class="card-project-cap">
-                        <div class="card-project-title">Project</div>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, .
-                        </p>
-                        <span class="tag-des">web project</span>
-                        <span class="tag-custom">php</span>
-                        <span class="tag-custom">bootstrap</span>
-                    </div>
-                    <img src="asset/project/dummy.png">
-                </div>
-                <div class="card-project">
-                    <div class="card-project-cap">
-                        <div class="card-project-title">Project</div>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, .
+                        <div class="card-project-title">IG Conten Management</div>
+                        <p class="pb-3">Konversi batch postingan Instagram dari bentuk txt dan gambar dalam bentuk web.
                         </p>
                         <span class="tag-web">web project</span>
-                        <span class="tag-custom">php</span>
+                        <span class="tag-custom">code igniter</span>
                         <span class="tag-custom">bootstrap</span>
+                        <div class="flex mt-2">
+                            <a href="" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
                     </div>
-                    <img src="asset/project/dummy.png">
                 </div>
                 <div class="card-project">
+                    <img src="asset/project/flat.png">
                     <div class="card-project-cap">
-                        <div class="card-project-title">Project</div>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, .
+                        <div class="card-project-title">Simple Flat Design</div>
+                        <p class="pb-3">Simple flat design
+                        </p>
+                        <span class="tag-des">design project</span>
+                        <span class="tag-custom">photoshop</span>
+                        <div class="flex mt-2">
+                            <a href="https://www.deviantart.com/bllsa/gallery/85349324/flat-design" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-deviantart"></i> More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="asset/project/jualanku.png">
+                    <div class="card-project-cap">
+                        <div class="card-project-title">Jualanku</div>
+                        <p class="pb-3">Project web store dengan Code Igniter
                         </p>
                         <span class="tag-web">web project</span>
-                        <span class="tag-custom">php</span>
+                        <span class="tag-custom">code igniter</span>
                         <span class="tag-custom">bootstrap</span>
+                        <div class="flex mt-2">
+                            <a href="" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
                     </div>
-                    <img src="asset/project/dummy.png">
+                </div>
+                <div class="card-project">
+                    <img src="asset/project/ebook.png">
+                    <div class="card-project-cap">
+                        <div class="card-project-title">Ebook Cover</div>
+                        <p class="pb-3">Design ebook cover
+                        </p>
+                        <span class="tag-des">design project</span>
+                        <span class="tag-custom">photoshop</span>
+                        <span class="tag-custom">illustrator</span>
+                        <div class="flex mt-2">
+                            <a href="https://www.deviantart.com/bllsa/gallery/85349350/book-cover" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-deviantart"></i> More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="asset/project/sale.jpg">
+                    <div class="card-project-cap">
+                        <div class="card-project-title">Logo Branding</div>
+                        <p class="pb-3">Design logo untuk makanan sale pisang
+                        </p>
+                        <span class="tag-des">design project</span>
+                        <span class="tag-custom">photoshop</span>
+                        <span class="tag-custom">illustrator</span>
+                        <div class="flex mt-2">
+                            <a href="https://www.deviantart.com/bllsa/gallery/85349332/branding" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-deviantart"></i> More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="asset/project/thai.png">
+                    <div class="card-project-cap">
+                        <div class="card-project-title">Poster Thai tea</div>
+                        <p class="pb-3">Design poster promosi thai tea
+                        </p>
+                        <span class="tag-des">design project</span>
+                        <span class="tag-custom">photoshop</span>
+                        <div class="flex mt-2">
+                            <a href="https://www.deviantart.com/bllsa/gallery/85349340/poster" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-deviantart"></i> More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src="asset/project/adm.jpg">
+                    <div class="card-project-cap">
+                        <div class="card-project-title">Dashboard E-perpus</div>
+                        <p class="pb-3">Dashboard untuk pengurus aplikasi E-perpus
+                        </p>
+                        <span class="tag-web">web project</span>
+                        <span class="tag-custom">code igniter</span>
+                        <span class="tag-custom">bootstrap</span>
+                        <div class="flex mt-2">
+                            <a href="" class="mx-auto rounded px-3 py-1 inline-block text-third hover:bg-primary"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
                 </div>
                 
                 
@@ -184,6 +255,56 @@
     </section>
     <!-- section project end -->
 
+    <!-- section contact start -->
+    <section id="Contact" class="scroll-m-custom bg-secondary group/title">
+        <h1 class="text-center text-6xl text-primary font-pixel pt-12 group-hover/title:tracking-widest">Keep In Touch</h1>
+
+        <div class=" container w-full flex mx-auto px-5 pt-20 pb-4">
+
+            <ul class="flex mx-auto">
+                <li class="text-third px-1">
+                    <a href="https://www.linkedin.com/in/bella-saputra" class="flex group w-auto px-5 py-3 m-auto bg-primary rounded-full border-2 border-primary hover:border-primary hover:bg-third hover:text-primary transition ease-in-out duration-500">
+                        <i class="fa-brands fa-linkedin-in text-xl m-0 p-0"></i>
+                        <p class="my-auto hidden group-hover:inline-block ml-3">linkedin</p>
+                    </a>
+                </li>
+                <li class="text-third px-1">
+                    <a href="https://www.deviantart.com/bllsa" class="flex group w-auto px-5 py-3 m-auto bg-primary rounded-full border-2 border-primary hover:border-primary hover:bg-third hover:text-primary transition ease-in-out duration-500">
+                        <i class="fa-brands fa-deviantart text-xl m-0 p-0"></i>
+                        <p class="my-auto hidden group-hover:inline-block ml-3">Deviantart</p>
+                    </a>
+                </li>
+                <li class="text-third px-1">
+                    <a href="mailto:bellasa234@gmail.com" class="flex group w-auto px-5 py-3 m-auto bg-primary rounded-full border-2 border-primary hover:border-primary hover:bg-third hover:text-primary transition ease-in-out duration-500">
+                        <i class="fa-solid fa-envelope text-xl m-0 p-0"></i>
+                        <p class="my-auto hidden group-hover:inline-block ml-3">Email</p>
+                    </a>
+                </li>
+                <li class="text-third px-1">
+                    <a href="https://github.com/bellasa" class="flex group w-auto px-5 py-3 m-auto bg-primary rounded-full border-2 border-primary hover:border-primary hover:bg-third hover:text-primary transition ease-in-out duration-500">
+                        <i class="fa-brands fa-github text-xl m-0 p-0"></i>
+                        <p class="my-auto hidden group-hover:inline-block ml-3">Github</p>
+                    </a>
+                </li>
+                <li class="text-third px-1">
+                    <a href="https://www.instagram.com/bll.sa" class="flex group w-auto px-5 py-3 m-auto bg-primary rounded-full border-2 border-primary hover:border-primary hover:bg-third hover:text-primary transition ease-in-out duration-500">
+                        <i class="fa-brands fa-instagram text-xl m-0 p-0"></i>
+                        <p class="my-auto hidden group-hover:inline-block ml-3">Instagram</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            
+            
+            
+        </div>
+        <div class="text-center">
+            <i class="fa-solid fa-palette"></i>
+            Designed and Created by <span class="font-bold">Bella Saputra</span>
+        </div>
+    </section>
+    <!-- section contact end -->
 
 
 

@@ -71,21 +71,21 @@
 
 
     .card-project {
-        @apply relative rounded-xl overflow-hidden font-mono   border-primary transition ease-in-out duration-500 shadow-lg
+        @apply  rounded-xl overflow-hidden  border-primary transition ease-in-out duration-500 shadow-lg
     }
     .card-project:hover {
         @apply translate-y-[-10px] drop-shadow-[0_10px_rgba(35,22,81,1)]
     }
 
     .card-project > img {
-        @apply transition ease-in-out duration-500 w-full aspect-[4/3] mb-32
+        @apply w-full aspect-[4/3] grayscale
     }
     .card-project:hover > img {
-        @apply rotate-[10deg]  scale-125
+        @apply  grayscale-0
     }
 
     .card-project-cap {
-        @apply px-3 py-4 bg-secondary absolute z-10 bottom-0 w-full
+        @apply px-3 pt-4 pb-2 bg-secondary w-full h-full
     }
     .card-project-title {
         @apply font-bold mb-2 text-lg
@@ -98,7 +98,7 @@
         @apply inline-block text-yellow-600 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 my-1
     }
     .tag-custom {
-        @apply inline-block text-slate-700 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 
+        @apply inline-block text-slate-700 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 my-1
     }
 
 

@@ -649,12 +649,10 @@ body {
 }
 
 .card-project {
-  position: relative;
   overflow: hidden;
   border-radius: 0.75rem;
   --tw-border-opacity: 1;
   border-color: rgb(35 22 81 / var(--tw-border-opacity));
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -673,34 +671,26 @@ body {
 }
 
 .card-project > img {
-  margin-bottom: 8rem;
   aspect-ratio: 4/3;
   width: 100%;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .card-project:hover > img {
-  --tw-rotate: 10deg;
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .card-project-cap {
-  position: absolute;
-  bottom: 0px;
-  z-index: 10;
+  height: 100%;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(77 204 189 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-project-title {
@@ -749,6 +739,8 @@ body {
 }
 
 .tag-custom {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   margin-right: 0px;
   display: inline-block;
   border-radius: 9999px;
@@ -797,6 +789,14 @@ body {
   margin: 1.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -833,8 +833,16 @@ body {
   margin-top: 1.25rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .inline {
@@ -877,6 +885,10 @@ body {
   width: 24rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -917,6 +929,10 @@ body {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -939,6 +955,10 @@ body {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(77 204 189 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-8 {
@@ -966,6 +986,25 @@ body {
   padding-right: 1.25rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -982,24 +1021,28 @@ body {
   padding-bottom: 0.75rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-main {
+  font-family: JetBrains Mono, monospace;
 }
 
 .font-pixel {
   font-family: VT323, monospace;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-xl {
@@ -1064,6 +1107,38 @@ body {
   transition-duration: 150ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:border-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 22 81 / var(--tw-border-opacity));
+}
+
+.hover\:bg-third:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 255 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 22 81 / var(--tw-bg-opacity));
+}
+
+.hover\:tracking-wider:hover {
+  letter-spacing: 0.05em;
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(35 22 81 / var(--tw-text-opacity));
+}
+
 .focus\:translate-y-\[5px\]:focus {
   --tw-translate-y: 5px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1074,8 +1149,12 @@ body {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.group:hover .group-hover\:inline {
-  display: inline;
+.group:hover .group-hover\:inline-block {
+  display: inline-block;
+}
+
+.group\/title:hover .group-hover\/title\:tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 @media (min-width: 640px) {

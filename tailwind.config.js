@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pixel : ['VT323','monospace']
+        pixel : ['VT323','monospace'],
+        main : ['JetBrains Mono','monospace']
       },
       colors: {
         'primary' : '#231651',
