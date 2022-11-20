@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+            overflow-x : hidden; 
+    }
+    .scroll-m-custom {
+        @apply scroll-m-[70px] sm:scroll-m-[50px]
+    }
+    .nav-link {
+        @apply md:px-4 md:py-2 hover:text-secondary
+    }
+
+
+
+
+    .typewriter {
+        width: 200px;
+    }
+
+
+    .typewriter-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d6fff6;
+    border-left: 2px solid #000;
+    animation: animate-typing 1.5s steps(12) infinite;
+    }
+    @keyframes animate-typing {
+        40%,
+        60% {
+            left: calc(100% + 4px);
+        }
+        100% {
+            left: 0%;
+        }
+    }
+
+
+
+    .card-stack {
+        @apply bg-third pt-5 px-5 rounded-xl border-4 border-secondary transition ease-in-out duration-500 drop-shadow-none
+    }
+
+    .card-stack:hover {
+        @apply -translate-x-2 -translate-y-2 drop-shadow-[8px_8px_rgba(77,204,189,1)]
+
+    }
+
+    .card-stack-img {
+        @apply grayscale
+    }
+    .card-stack:hover .card-stack-img {
+        @apply grayscale-0
+    }
+
+    .card-stack-cap {
+        @apply invisible
+    }
+
+    .card-stack:hover .card-stack-cap {
+        @apply visible text-center
+    }
+
+
+
+    .card-project {
+        @apply relative rounded-xl overflow-hidden font-mono   border-primary transition ease-in-out duration-500 shadow-lg
+    }
+    .card-project:hover {
+        @apply translate-y-[-10px] drop-shadow-[0_10px_rgba(35,22,81,1)]
+    }
+
+    .card-project > img {
+        @apply transition ease-in-out duration-500 w-full aspect-[4/3] mb-32
+    }
+    .card-project:hover > img {
+        @apply rotate-[10deg]  scale-125
+    }
+
+    .card-project-cap {
+        @apply px-3 py-4 bg-secondary absolute z-10 bottom-0 w-full
+    }
+    .card-project-title {
+        @apply font-bold mb-2 text-lg
+    }
+
+    .tag-web {
+        @apply inline-block text-pink-500 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 my-1
+    }
+    .tag-des {
+        @apply inline-block text-yellow-600 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 my-1
+    }
+    .tag-custom {
+        @apply inline-block text-slate-700 bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold mr-0 
+    }
+
+
+}
