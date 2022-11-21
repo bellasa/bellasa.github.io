@@ -1120,14 +1120,14 @@ body {
   border-color: rgb(35 22 81 / var(--tw-border-opacity));
 }
 
-.hover\:bg-third:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 255 246 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(35 22 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-third:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 255 246 / var(--tw-bg-opacity));
 }
 
 .hover\:tracking-wider:hover {
