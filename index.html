@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body class="text-slate-700 bg-third font-main">
+    <!-- preloader start -->
+    <div id="Preloader" class="h-screen flex justify-center items-center z-[999 bg-primary text-third">
+        <i class="fa-sharp fa-solid fa-spinner text-4xl animate-spin mr-2 "></i>
+        <p>Loading...<p>
+    </div>
+    <!-- preloader end -->
+
+
     <!-- nav start -->
     <nav class="fixed bg-primary w-full px-8 md:px-auto text-third z-50">
         <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
@@ -310,6 +318,7 @@
 
 
     <script src="base/particles.min.js" type="text/javascript"></script>
+    <script src="base/jquery.min.js" type="text/javascript"></script>
     <script src="style/style.js" type="text/javascript"></script>
 </body>
 </html>

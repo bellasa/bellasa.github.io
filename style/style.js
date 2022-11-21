@@ -1,3 +1,10 @@
+$(window).on('load', function(){
+  setTimeout(function(){
+    $('#Preloader').fadeOut();
+  }, 3000);
+  
+})
+
 // particle bg home
 particlesJS.load('Home-particles','asset/particles/home-particles.json');
 
